@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Search_page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./CSS/searchPage.css" />
+    <link rel="stylesheet" type="text/css" href="JS/Semantic-UI-master/dist/semantic.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/main.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/loadRecipe.js"></script>
+    <script src="JS/search_page.js"></script>
+    <script src="JS/nav.js"></script>
+
+</head>
+
+
+<body>
+    <div id = "heading">
+        <h1 class="ui header">Recipe</h1>
+
+        <div class="ui black button small"  id="threeline_icon" onclick="w3_open()">
+            <img src="img/threelines.png" alt="menu">
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block"  id="navbar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+
+        <div class="w3-bar-item">
+            <div id="profilePreviwe">
+                <img src="img/default_avatar_large.png" alt="user image" id="profileImgPreview">
+                <span id="user_name">user_name</span>
+            </div>
+            <br>
+            <a href="./user_page.html"> <span> profile</span> </a>
+            <a href="./login.html"> <span id="log_out"> log out</span> </a>
+        </div>
+        <hr>
+        <a href="./search_page.html" class="w3-bar-item w3-button">Search recipe</a>
+        <hr>
+        <a href="fridge_2.html" class="w3-bar-item w3-button">Fridge Inventory</a>
+        <hr>
+        <a href="./favorite_page.html" class="w3-bar-item w3-button">Favorite recipes</a>
+        <hr>
+    </div>
+
+
+    <div id = "sidePanel">
+        <div class="inline field">
+            <h2>Ingredients from Fridge: </h2>
+            <br>
+
+            <div id="checkboxPanel">
+                <input type="checkbox" name="vehicle1" value="Bike"><span>dsa</span><br>
+                <input type="checkbox" name="vehicle2" value="Car"><span>dsa</span><br>
+                <input type="checkbox" name="vehicle3" value="Boat" checked><span>dsa</span><br>
+            </div>
+
+            <a href="fridge_2.html">
+                <button class="ui button blue large" id="inventoryButton">
+                Edit Fridge Inventory
+            </button>
+            </a>
+
+        </div>
+    </div>
+
+    <div id="entreePanel">
+        <div id="fullmatchBanner">
+            <h2> Perfect match:</h2>
+        </div>
+
+        <a href="recipe_pages/recipe_page_cc.html" class="entree">
+                <div class="entreeOverlay"><span>dsads</span></div>
+
+                <div class="entreeElements">
+                    <img src="img/PDN/PDN_preview.jpg" alt="sss">
+                    <h3>Orrrr</h3>
+                </div>
+        </a>
+
+
+        <div class ="entree"></div>
+        <div class ="entree"></div>
+
+        <div id="paritalmatchBanner">
+            <hr>
+            <h2> Partial match:</h2>
+        </div>
+        <div class ="entree"></div>
+        <div class ="entree"></div>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function() {
+            initializeIfEmpty();
+
+            downloadDataFromStorage();
+            console.log(recipeInfo);
+
+            initializeCheckBox();
+            initalizeSearchPanel();
+        });
+    </script>
+
+
+
+</body>
+</html>

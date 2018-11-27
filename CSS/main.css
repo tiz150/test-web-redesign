@@ -1,0 +1,81 @@
+.go_back_button{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 5px;
+}
+
+.go_back_button p{
+    font-size: 20px; !important;
+}
+
+.signout{
+    font-size: 20px;
+}
+
+
+#threeline_icon
+{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    padding: 5px;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+
+#mainContainer{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 20px;
+
+    padding: 10px;
+    border: dimgrey;
+    border-width: 1px;
+    border-style: solid;
+    min-width: 600px;
+}
+
+#mainContainer h1{
+    font-size: 5em !important;
+}
+
+#mainContainer h2{
+    font-size: 3em !important;
+}
+
+#mainContainer h3{
+    font-size: 1.5em !important;
+}
+
+#mainContainer #title{
+    text-align: center;
+}
+
+#heading_main{
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    background: gainsboro;
+}
+
+#entreePanel_main{
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+
+    overflow: hidden;
+}

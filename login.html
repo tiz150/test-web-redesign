@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Login</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./CSS/login.css" />
+
+        <link rel="stylesheet" type="text/css" href="JS/Semantic-UI-master/dist/semantic.css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="JS/Semantic-UI-master/dist/components/form.js"></script>
+        <script src="JS/Semantic-UI-master/dist/components/transition.js"></script>
+        <script src="JS/loadRecipe.js"></script>
+    </head>
+
+
+ <body class="container">
+ <div class="ui middle aligned center aligned grid loginPanel">
+     <div class="column">
+         <h2 class="ui blue image header">
+             <div class="content">
+                 Log-in
+             </div>
+         </h2>
+
+         <form class="ui large form">
+             <div class="ui stacked segment">
+                 <div class="field">
+                     <div class="ui left icon input">
+                         <i class="user icon"></i>
+                         <input type="text" name="email" placeholder="E-mail address">
+                     </div>
+                 </div>
+
+                 <div class="field">
+                     <div class="ui left icon input">
+                         <i class="lock icon"></i>
+                         <input type="password" name="password" placeholder="Password">
+                     </div>
+                 </div>
+
+                 <div class="ui huge" id="finish_cooking_button">
+                     <div class="ui blue button">
+                         <a href="./search_page.html" style="color: whitesmoke">Login</a>
+                     </div>
+                 </div>
+             </div>
+
+         </form>
+     </div>
+ </div>
+
+ <script>
+     $(document).ready(function() {
+         initializeRecipe();
+         initializeFridge();
+     });
+ </script>
+
+ </body>
+</html>

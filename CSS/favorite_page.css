@@ -1,0 +1,107 @@
+#fullmatchBanner{
+    width: 100%;
+    height: 50px;
+}
+
+#fullmatchBanner h2,
+#paritalmatchBanner h2{
+    padding-left: 30px;
+}
+
+.ignore_overflow{
+    position: relative;
+}
+
+.entree{
+    width: 23%;
+    height: 200px; //33 - 2
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    margin: 2%;
+
+    max-height: 30%;
+    max-width: 25%;
+
+    border-radius: 15px;
+
+    display: block;
+
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative;
+
+    background: gainsboro;
+}
+
+.entreeElements{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.entreeElements img{
+    width:100%;
+    height:70%;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.entreeElements h3{
+    color: black;
+    font-weight: normal;
+}
+
+.entreeElements h3{
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.entreeOverlay{
+    transition: .5s ease;
+    opacity: 0;
+
+    overflow: hidden;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.entreeOverlay span{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.entreeOverlay li{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.entreeElements:hover{
+    opacity: 0.2;
+}
+
+.entree:hover .entreeOverlay{
+    opacity: 1;
+}
+
+.favoriteIcon{
+    position: absolute;
+
+    max-width: 30px;
+    max-height: 30px;
+
+    top:-10px;
+    right: -10px;
+}

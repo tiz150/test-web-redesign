@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="JS/Semantic-UI-master/dist/semantic.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="CSS/user_page.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/popup.css" type="text/css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/fridge.js"></script>
+    <script src="JS/loadRecipe.js"></script>
+    <script src="JS/nav.js"></script>
+    <script src="JS/user_page.js"></script>
+
+</head>
+
+<body id="mainContainer">
+
+<div class="ui huge ">
+    <a href="./search_page.html">
+    <div class="ui button go_back_button">
+        <p> <b>Go back to search</b></p>
+    </div>
+    </a>
+</div>
+
+
+<!-- Sidebar -->
+<div class="ui black button small"  id="threeline_icon" onclick="w3_open()">
+    <img src="img/threelines.png" alt="menu">
+</div>
+
+<div class="w3-sidebar w3-bar-block"  id="navbar">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+
+    <div class="w3-bar-item">
+        <div id="profilePreviwe">
+            <img src="img/default_avatar_large.png" alt="user image" id="profileImgPreview">
+            <span id="user_name">user_name</span>
+        </div>
+        <br>
+        <a href="./user_page.html"> <span> profile</span> </a>
+        <a href="./login.html"> <span id="log_out"> log out</span> </a>
+    </div>
+    <hr>
+    <a href="./search_page.html" class="w3-bar-item w3-button">Search recipe</a>
+    <hr>
+    <a href="fridge_2.html" class="w3-bar-item w3-button">Fridge Inventory</a>
+    <hr>
+    <a href="./favorite_page.html" class="w3-bar-item w3-button">Favorite recipes</a>
+    <hr>
+</div>
+
+<!-- fridge inventory panel -->
+<div id="heading_main">
+    <h1 id="title">User profile</h1>
+</div>
+
+<div id="entreePanel_main">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+
+
+                <div>
+
+                    <div class="panel-body">
+                        <div class="row">
+                            <!-- edit password -->
+                            <div id="addNewItemPanel" class="editPassword">
+                                <div id="addNewItemTitle">
+                                    <h4> Edit password</h4>
+                                </div>
+
+                                <div id="addNewItemContentPanel">
+                                    <div class="ui large form">
+                                        <div class="ui stacked segment">
+                                            <div class="field">
+                                                <div class="ui left icon input">
+                                                    <h3>Password: </h3>
+                                                    <input type="password" name="New Password">
+                                                </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <div class="ui left icon input">
+                                                    <h3>Retype Password: </h3>
+                                                    <input type="password" name="Retype New Password">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="addNewItemButtons">
+                                            <div class="buttonContainer">
+                                                <button class="ui grey button" onclick="editPassword()">
+                                                    Confirm
+                                                </button>
+                                            </div>
+
+                                            <div class="buttonContainer">
+                                                <button class="ui grey button" onclick="editPassword()">
+                                                    Cancel
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-lg-3 " align="center">
+                                <img alt="User Pic" src="img/default_avatar_large.png" class="img-circle img-responsive" id="profileImg">
+                            </div>
+
+                            <div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
+                            </div>
+                            <div class=" col-md-9 col-lg-9 ">
+                                <table class="table table-user-information">
+                                    <tbody>
+                                    <tr>
+                                        <td>User name:</td>
+                                        <td>cogs120</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td>xxx@ucsd.edu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date of registration:</td>
+                                        <td>11/14/2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Password</td>
+                                        <td>XXXXXXXX
+                                            <img src="./img/Editing-edit-icon.png" alt = "edit password" id="editPassword" onclick="editPassword()">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>DATE OF BIRTH</td>
+                                        <td>11/12/1993</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>GENDER</td>
+                                        <td>Male</td>
+                                    </tr>
+
+                                    <td>Phone Number</td>
+                                    <td>555-4567-890</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="ui huge sign_out_icon float_right">
+                            <a href="./login.html" class="ui black button ">
+                                  <p class="signout">Sign out</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    $(document).ready(function() {
+       editPassword();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>favorite</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="JS/Semantic-UI-master/dist/semantic.css">
+    <link rel="stylesheet" type="text/css" href="CSS/favorite_page.css">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+
+    <script src="JS/favorite.js"></script>
+    <script src="JS/loadRecipe.js"></script>
+    <script src="JS/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+<body id="mainContainer">
+    <div class="ui huge home_icon go_back_button">
+        <div class="ui button">
+            <a href="./search_page.html">Go back to search</a>
+        </div>
+    </div>
+
+    <div class="ui black button small"  id="threeline_icon" onclick="w3_open()">
+        <img src="img/threelines.png" alt="menu">
+    </div>
+
+    <div id = "heading_main">
+        <h1 id="title">Favorite Recipes</h1>
+    </div>
+
+    <hr>
+
+    <div id="entreePanel_main">
+    </div>
+</body>
+
+<script>
+    $(document).ready(function() {
+        initializeIfEmpty();
+        initializeFavorite();
+    });
+</script>
+</html>

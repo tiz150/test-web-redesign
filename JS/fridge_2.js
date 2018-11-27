@@ -61,14 +61,14 @@
             if (fridgeList[i].Name === itemName)
             {
                 fridgeList[i].Amount = (fridgeList[i].Amount * 1) + parseInt(itemAmount);
-                initializeContentPanel();
+                initializeContentPanelWithAnimation(fridgeList[i].Name);
                 return;
             }
         }
 
         // add to json file
         fridgeList.push({ "Name": itemName, "Amount": itemAmount});
-        initializeContentPanel();
+        initializeContentPanelWithAnimation(itemName);
     }
 
     /**
@@ -88,6 +88,7 @@
 
         var item_container = document.createElement("div");
         item_container.className = "item_container";
+        item_container.idName = itemName;
 
         var name = document.createElement("p");
         name.className = "item_name";
@@ -120,9 +121,65 @@
                 break;
             }
             }
-                item_container.removeChild(node);
+                cp.removeChild(item_container);
 
             });
+
+    }
+
+    function displayItemWithAnimation(itemName, itemAmount) {
+        /*
+        var original = document.getElementById("motherOfAllButtons");
+        var clone = original.cloneNode(true); // "deep" clone
+        clone.id = "duplicater" + ++i; // there can only be one element with an ID
+        clone.onclick = duplicate; // event handlers are not cloned
+        original.parentNode.appendChild(clone);
+        */
+
+
+        var cp = document.getElementById("contentPanel");
+
+        var item_container = document.createElement("div");
+        item_container.className = "item_container";
+        item_container.idName = itemName;
+        item_container.style.animationName = "highlight";
+        item_container.style.animationDuration = "2s";
+
+
+        var name = document.createElement("p");
+        name.className = "item_name";
+        name.innerHTML = itemName;
+
+        var amount = document.createElement("p");
+        amount.className = "item_amount";
+        amount.innerHTML = itemAmount;
+
+        var deleteImg = document.createElement("img");
+        deleteImg.src = "./img/close-cross-icon_2.png";
+        deleteImg.alt = "delete";
+        deleteImg.className = "delete";
+
+        var hr = document.createElement("hr");
+
+        item_container.appendChild(name);
+        item_container.appendChild(amount);
+        item_container.appendChild(deleteImg);
+        item_container.appendChild(hr);
+
+        cp.appendChild(item_container);
+
+        deleteImg.addEventListener("click", function(){
+            for (let i = 0; i < fridgeList.length; i++)
+            {
+                if (fridgeList[i].Name === itemName)
+                {
+                    fridgeList.splice(i,1);
+                    break;
+                }
+            }
+            cp.removeChild(item_container);
+
+        });
 
     }
 
@@ -139,8 +196,25 @@
 
         for (let i = 0; i < fridgeList.length; i++)
         {
-            console.log("aqa");
             displayItem(fridgeList[i].Name, fridgeList[i].Amount);
+        }
+
+    }
+
+    function initializeContentPanelWithAnimation(idName) {
+        var cp = document.getElementById("contentPanel");
+
+        // clear all elements
+        while (cp.firstChild) {
+            cp.removeChild(cp.firstChild);
+        }
+
+        for (let i = 0; i < fridgeList.length; i++)
+        {
+            if (fridgeList[i].Name === idName)
+                displayItemWithAnimation(fridgeList[i].Name, fridgeList[i].Amount);
+            else
+                displayItem(fridgeList[i].Name, fridgeList[i].Amount);
         }
 
     }

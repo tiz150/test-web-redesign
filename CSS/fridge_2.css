@@ -73,10 +73,9 @@ hr {
 }
 
 .item_container{
-    width: 100%;
-    hieght: 80px;
-
+    height: 80px;
     width: 95%;
+
 }
 
 .item_container p{
@@ -112,3 +111,9 @@ hr {
 }
 
 
+
+@keyframes highlight{
+    0%  {background-color:white;}
+    50%   {background-color:skyblue;}
+    100% {background-color:white;}
+}

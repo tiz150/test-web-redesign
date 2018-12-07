@@ -23,7 +23,7 @@ h3{
 body{
     display: grid;
     grid-template-rows: 100px 1fr;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 350px 1fr;
 
     background-image: url("../img/searchBackground.jpg");
 }
@@ -79,11 +79,12 @@ input[type='checkbox']:checked {
 }
 
 #sidePanel span{
-    padding-left: 15px;
     color: antiquewhite;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     vertical-align: center;
+
+    box-decoration-break: clone;
 }
 
 

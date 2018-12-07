@@ -2,12 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09b10244-ebea-47f0-bd47-0fa7bf22cf9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/help1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/help2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/help3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/help4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/fridge_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/fridge_2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/searchPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/searchPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/user_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/user_page.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/fridge_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/fridge_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/loadRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/loadRecipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/search_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/search_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favorite_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/favorite_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fridge_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Pho/pho_preview.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Pho/pho_preview.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SP/sp_preview.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/SP/sp_preview.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe_pages/recipe_page_bp.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe_pages/recipe_page_bp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe_pages/recipe_page_cc.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe_pages/recipe_page_cc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe_pages/recipe_page_ft.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe_pages/recipe_page_ft.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe_pages/recipe_page_oc.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe_pages/recipe_page_oc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe_pages/recipe_page_pdn.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe_pages/recipe_page_pdn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe_pages/recipe_page_pho.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe_pages/recipe_page_pho.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe_pages/recipe_page_sp.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe_pages/recipe_page_sp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe_pages/recipe_page_steak.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe_pages/recipe_page_steak.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/user_page.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,76 +43,80 @@
     <session id="-613413703">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="html" value="4" />
-          <entry key="js" value="1" />
+          <entry key="css" value="23" />
+          <entry key="html" value="42" />
+          <entry key="js" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="4" />
-          <entry key="JavaScript" value="1" />
+          <entry key="CSS" value="23" />
+          <entry key="HTML" value="42" />
+          <entry key="JavaScript" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="121" />
-          <entry key="html" value="10" />
-          <entry key="js" value="417" />
+          <entry key="css" value="747" />
+          <entry key="dummy" value="9" />
+          <entry key="html" value="601" />
+          <entry key="js" value="1310" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="121" />
-          <entry key="HTML" value="10" />
-          <entry key="JavaScript" value="417" />
+          <entry key="CSS" value="747" />
+          <entry key="HTML" value="601" />
+          <entry key="JavaScript" value="1310" />
+          <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fridge_2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-828">
-              <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSS/fridge_2.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1807">
-              <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JS/fridge_2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="198" selection-start-line="198" selection-end-line="198" />
+            <state relative-caret-position="340">
+              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fridge_2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSS/nav.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -105,6 +130,36 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>flex</find>
+      <find>add</find>
+      <find>displ</find>
+      <find>user pr</find>
+      <find>text</find>
+      <find>user pro</find>
+      <find>p</find>
+      <find>titl</find>
+      <find>frid</find>
+      <find>item</find>
+      <find>span</find>
+      <find>head</find>
+      <find>favorite</find>
+      <find>fav</find>
+      <find>go ba</find>
+      <find>sign out</find>
+      <find>add</find>
+      <find>side</find>
+      <find>init</find>
+      <find>ise</find>
+      <find>go ba</find>
+      <find>go v</find>
+      <find>go</find>
+      <find>three</find>
+      <find>title</find>
+      <find>only</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -112,9 +167,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/fridge.html" />
-        <option value="$PROJECT_DIR$/fridge_2.html" />
         <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/JS/search_page.js" />
+        <option value="$PROJECT_DIR$/JS/loadRecipe.js" />
+        <option value="$PROJECT_DIR$/CSS/user_page.css" />
+        <option value="$PROJECT_DIR$/CSS/searchPage.css" />
+        <option value="$PROJECT_DIR$/recipe_pages/recipe_page_oc.html" />
+        <option value="$PROJECT_DIR$/recipe_pages/recipe_page_pdn.html" />
+        <option value="$PROJECT_DIR$/recipe_pages/recipe_page_pho.html" />
+        <option value="$PROJECT_DIR$/recipe_pages/recipe_page_sp.html" />
+        <option value="$PROJECT_DIR$/recipe_pages/recipe_page_steak.html" />
+        <option value="$PROJECT_DIR$/recipe_pages/recipe_page_bp.html" />
+        <option value="$PROJECT_DIR$/recipe_pages/recipe_page_cc.html" />
+        <option value="$PROJECT_DIR$/recipe_pages/recipe_page_ft.html" />
+        <option value="$PROJECT_DIR$/help1.html" />
+        <option value="$PROJECT_DIR$/help2.html" />
         <option value="$PROJECT_DIR$/CSS/fridge_2.css" />
+        <option value="$PROJECT_DIR$/CSS/main.css" />
+        <option value="$PROJECT_DIR$/help3.html" />
+        <option value="$PROJECT_DIR$/help4.html" />
+        <option value="$PROJECT_DIR$/favorite_page.html" />
+        <option value="$PROJECT_DIR$/user_page.html" />
+        <option value="$PROJECT_DIR$/fridge_2.html" />
+        <option value="$PROJECT_DIR$/search_page.html" />
+        <option value="$PROJECT_DIR$/CSS/nav.css" />
         <option value="$PROJECT_DIR$/JS/fridge_2.js" />
       </list>
     </option>
@@ -132,8 +208,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1974" />
-    <option name="y" value="1" />
+    <option name="x" value="1941" />
+    <option name="y" value="497" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -161,6 +237,11 @@
               <item name="A5_redesign" type="462c0819:PsiDirectoryNode" />
               <item name="JS" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="A5_redesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A5_redesign" type="462c0819:PsiDirectoryNode" />
+              <item name="recipe_pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -172,6 +253,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Walter White\WebstormProjects\A5_redesign" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -197,20 +284,26 @@
       <updated>1543287709435</updated>
       <workItem from="1543287710669" duration="107000" />
       <workItem from="1543288537425" duration="3784000" />
+      <workItem from="1543986398917" duration="10598000" />
+      <workItem from="1544039110243" duration="737000" />
+      <workItem from="1544087223702" duration="651000" />
+      <workItem from="1544126255883" duration="4697000" />
+      <workItem from="1544139833503" duration="16286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3891000" />
+    <option name="totallyTimeSpent" value="36860000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="1" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14699684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -232,23 +325,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/search_page.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fridge_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-828">
-          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/fridge_2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1807">
-          <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -256,10 +332,188 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JS/search_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/loadRecipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="110" column="53" lean-forward="true" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Desktop/Tor Browser/Browser/TorBrowser/Data/Browser/profile.default/browser-extension-data/https-everywhere-eff@eff.org/storage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/favorite_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1628">
+          <caret line="98" column="4" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/user_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/searchPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe_pages/recipe_page_oc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="42" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe_pages/recipe_page_pho.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe_pages/recipe_page_steak.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe_pages/recipe_page_bp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe_pages/recipe_page_cc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe_pages/recipe_page_ft.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe_pages/recipe_page_pdn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe_pages/recipe_page_sp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/help2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/help3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/help4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/favorite_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-313">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/help1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/fridge_2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="38" column="76" selection-start-line="38" selection-start-column="76" selection-end-line="38" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/nav.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fridge_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JS/fridge_2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
+        <state relative-caret-position="340">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
         </state>
       </provider>
     </entry>

@@ -22,12 +22,14 @@
 
 </head>
 
-<body id="mainContainer" onunload="uploadDataToStorage()">
+<body id="mainContainer2" onunload="uploadDataToStorage()">
 
-<div class="ui huge home_icon go_back_button">
-    <div class="ui button">
-        <a href="./search_page.html">Go back to search</a>
-    </div>
+<div class="ui huge ">
+    <a href="./search_page.html">
+        <div class="ui button go_back_button">
+            <p> <b>Go back to search</b></p>
+        </div>
+    </a>
 </div>
 
 
@@ -35,6 +37,10 @@
 <div class="ui black button small"  id="threeline_icon" onclick="w3_open()">
     <img src="img/threelines.png" alt="menu">
 </div>
+
+<a href="./help2.html">
+    <img src="img/helpDoc/help.jpg" alt="help" id="helpIcon">
+</a>
 
 <div class="w3-sidebar w3-bar-block"  id="navbar">
     <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
@@ -58,46 +64,50 @@
 </div>
 
 <!-- fridge inventory panel -->
-<div id="heading_main">
-    <h1 id="title">Fridge Inventory</h1>
-</div>
-
-<div id="entreePanel_main">
-    <h3 class="item_name subtitle">Item name</h3>
-    <h3 class="item_amount subtitle">Amount(g)</h3>
-    <h3 class="delete subtitle">Delete</h3>
-    <hr noshade>
+<div id="mainPanel">
+    <div id="tileContainer">
+        <h1 class = " ui header" id="title">Fridge Inventory</h1>
+    </div>
 
     <div id="contentPanel">
         <div class="item_container">
-            <p class="item_name">aaa</p>
-            <p class="item_amount">100</p>
-            <p class="delete">X</p>
+            <h3 class="item_name subtitle">Item name</h3>
+            <h3 class="item_amount subtitle">Amount(g)</h3>
+            <h3 class="delete subtitle">Delete</h3>
             <hr>
         </div>
-    </div>
-</div>
 
-<div id="buttonPanel">
-    <div class="buttonContainer">
-        <button class="ui button" onclick="displayAddItemPanel()">
-            Add new item
-        </button>
-    </div>
-
-    <div class="buttonContainer">
-        <button class="ui button" onclick="hideFridgePanel(); initializeCheckBox(); initalizeSearchPanel()">
-            <a href="search_page.html">Confirm</a>
-        </button>
+        <div class="item_container">
+             <p class="item_name">aaa</p>
+             <p class="item_amount">100</p>
+             <p class="delete">X</p>
+             <hr>
+        </div>
     </div>
 
-    <!--
-    <div class="buttonContainer">
-        <button class="ui button" onclick="hideAddItemPanel()">
-            Cancel
-        </button>
+    <div id="buttonPanel">
+        <div class="buttonContainer">
+            <button class="ui blue button" onclick="displayAddItemPanel()">
+                Add new item
+            </button>
+        </div>
+
+        <a href="search_page.html">
+        <div class="buttonContainer">
+            <button class="ui blue button">
+                Confirm
+            </button>
+        </div>
+        </a>
+
+        <!--
+        <div class="buttonContainer">
+            <button class="ui button" onclick="hideAddItemPanel()">
+                Cancel
+            </button>
+        </div>
+        -->
     </div>
-    -->
 </div>
 
 <!-- add new item panel -->
@@ -111,13 +121,14 @@
             <div class="ui stacked segment">
                 <div class="field">
                     <div class="ui left icon input">
-                        <input type="text" name="Ingredient_name" placeholder="Ingredient name">
+                        <input type="text" name="Ingredient_name" placeholder="Ingredient name" id="a1">
                     </div>
                 </div>
 
                 <div class="field">
                     <div class="ui left icon input">
-                        <input type="text" name="Ingredient_amount" placeholder="Ingredient amount (g)">
+                        <input type="text" name="Ingredient_amount"
+                               placeholder="Ingredient amount (g), enter number only" id="a2">
                     </div>
                 </div>
             </div>
@@ -146,6 +157,12 @@
 
         downloadDataFromStorage();
         initializeContentPanel();
+
+        function keypress(event) {
+            if (event.which === 13 || event.keyCode === 13) {
+                console.log("enter")
+            }
+        }
     });
 </script>
 </body>

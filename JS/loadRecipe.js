@@ -5,28 +5,28 @@ let fridgeList = [
     },
 
     {
-        "Name": "Chicken",
+        "Name": "Cinnamon",
         "Amount": 200
     },
 
     {
-        "Name": "Orange",
+        "Name": "Beef soup bones",
+        "Amount": 400
+    },
+
+    {
+        "Name": "Ginger",
         "Amount": 20
     },
 
     {
-        "Name": "Sugar",
-        "Amount": 300
+        "Name": "Cilantro",
+        "Amount": 50
     },
 
     {
-        "Name": "Corn",
-        "Amount": 300
-    },
-
-    {
-        "Name": "Oil",
-        "Amount": 300
+        "Name": "Noodle",
+        "Amount": 500
     },
 ];
 

@@ -15,7 +15,14 @@
      */
     function displayAddItemPanel() {
         document.getElementById("addNewItemPanel").style.display = "flex";
-        console.log("aaa")
+        console.log("aas");
+
+        let i_name= document.getElementById("a1");
+        let i_amount = document.getElementById("a2");
+
+       i_name.value = "";
+       i_name.focus();
+       i_amount.value = "";
     }
 
     /**
@@ -36,6 +43,15 @@
         //format name input, capitalize first letter
         itemName = itemName.toLowerCase();
         itemName= itemName.charAt(0).toUpperCase() + itemName.slice(1);
+
+        //format amount input, remove g if needed
+        if (itemAmount.charAt(itemAmount.length - 1) === 'g' || itemAmount.charAt(itemAmount.length - 1) === 'G')
+        {
+            console.log(itemAmount.charAt(itemAmount.length - 1));
+            itemAmount = itemAmount.replace('g', "");
+        }
+
+
 
 
         //check input
@@ -74,7 +90,7 @@
     /**
      * add a button to the content panel, trigger by page initialization and addItem(itemName, itemAmount) function
      */
-    function displayItem(itemName, itemAmount) {
+    function displayItem(itemName, itemAmount, isOdd) {
         /*
         var original = document.getElementById("motherOfAllButtons");
         var clone = original.cloneNode(true); // "deep" clone
@@ -85,10 +101,10 @@
 
 
         var cp = document.getElementById("contentPanel");
+        var outside_container = document.createElement("div");
+        outside_container.idName = itemName;
 
         var item_container = document.createElement("div");
-        item_container.className = "item_container";
-        item_container.idName = itemName;
 
         var name = document.createElement("p");
         name.className = "item_name";
@@ -105,12 +121,23 @@
 
         var hr = document.createElement("hr");
 
-        item_container.appendChild(name);
-        item_container.appendChild(amount);
-        item_container.appendChild(deleteImg);
-        item_container.appendChild(hr);
+        if (isOdd)
+        {
+            outside_container.className = "item_container oddNumber";
+            console.log("even");
+        }
+        else
+        {
+            outside_container.className = "item_container";
+        }
 
-        cp.appendChild(item_container);
+
+        item_container.appendChild(name);
+        item_container.appendChild(deleteImg);
+        item_container.appendChild(amount);
+        outside_container.appendChild(item_container);
+
+        cp.appendChild(outside_container);
 
             deleteImg.addEventListener("click", function(){
                 for (let i = 0; i < fridgeList.length; i++)
@@ -121,13 +148,12 @@
                 break;
             }
             }
-                cp.removeChild(item_container);
-
+                initializeContentPanel();
             });
 
     }
 
-    function displayItemWithAnimation(itemName, itemAmount) {
+    function displayItemWithAnimation(itemName, itemAmount, isOdd) {
         /*
         var original = document.getElementById("motherOfAllButtons");
         var clone = original.cloneNode(true); // "deep" clone
@@ -142,9 +168,12 @@
         var item_container = document.createElement("div");
         item_container.className = "item_container";
         item_container.idName = itemName;
-        item_container.style.animationName = "highlight";
         item_container.style.animationDuration = "2s";
 
+        if (isOdd)
+            item_container.style.animationName = "highlight2";
+        else
+            item_container.style.animationName = "highlight";
 
         var name = document.createElement("p");
         name.className = "item_name";
@@ -162,11 +191,20 @@
         var hr = document.createElement("hr");
 
         item_container.appendChild(name);
-        item_container.appendChild(amount);
         item_container.appendChild(deleteImg);
+        item_container.appendChild(amount);
         item_container.appendChild(hr);
 
         cp.appendChild(item_container);
+        if (isOdd)
+        {
+            item_container.className = "item_container oddNumber";
+            console.log("even");
+        }
+        else
+        {
+            item_container.className = "item_container";
+        }
 
         deleteImg.addEventListener("click", function(){
             for (let i = 0; i < fridgeList.length; i++)
@@ -194,9 +232,14 @@
             cp.removeChild(cp.firstChild);
         }
 
+        displayItemTitle();
+
+        var isEven = true;
+
         for (let i = 0; i < fridgeList.length; i++)
         {
-            displayItem(fridgeList[i].Name, fridgeList[i].Amount);
+            displayItem(fridgeList[i].Name, fridgeList[i].Amount, isEven);
+            isEven = !isEven;
         }
 
     }
@@ -209,13 +252,46 @@
             cp.removeChild(cp.firstChild);
         }
 
+        displayItemTitle();
+        var isEven = true;
+
         for (let i = 0; i < fridgeList.length; i++)
         {
             if (fridgeList[i].Name === idName)
-                displayItemWithAnimation(fridgeList[i].Name, fridgeList[i].Amount);
+                displayItemWithAnimation(fridgeList[i].Name, fridgeList[i].Amount, isEven);
             else
-                displayItem(fridgeList[i].Name, fridgeList[i].Amount);
-        }
+                displayItem(fridgeList[i].Name, fridgeList[i].Amount, isEven);
 
+            isEven = !isEven;
+        }
+    }
+
+    function displayItemTitle(){
+        var cp = document.getElementById("contentPanel");
+
+        var item_container = document.createElement("div");
+        item_container.className = "item_container";
+
+        var item_name = document.createElement("h3");
+        item_name.className = "item_name subtitle";
+        item_name.innerHTML = "Item name";
+
+        var item_amount = document.createElement("h3");
+        item_amount.className = "item_amount subtitle";
+        item_amount.innerHTML = "Amount(g)";
+
+        var delete_button = document.createElement("h3");
+        delete_button.className = "delete subtitle";
+        delete_button.innerHTML = "Delete";
+
+
+        var hr = document.createElement("hr");
+
+        item_container.appendChild(item_name);
+        item_container.appendChild(delete_button);
+        item_container.appendChild(item_amount);
+        item_container.appendChild(hr);
+
+        cp.appendChild(item_container);
     }
 }

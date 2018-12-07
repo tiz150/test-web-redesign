@@ -23,6 +23,17 @@
     padding: 5px;
 }
 
+#helpIcon{
+    position: absolute;
+    top: 25px;
+    right: 110px;
+
+    padding: 5px;
+
+    width: 45px;
+    height: 45px;
+}
+
 html{
     height: 100%;
     width: 100%;
@@ -42,9 +53,29 @@ html{
     border: dimgrey;
     border-width: 1px;
     border-style: solid;
+
     min-width: 600px;
+    height: fit-content;
 }
 
+#mainContainer2{
+    display: flex;
+    height: fit-content;
+
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 20px;
+
+    padding: 10px;
+    border: dimgrey;
+    border-width: 1px;
+    border-style: solid;
+
+    min-width: 600px;
+    min-height: 500px;
+
+    width: 60vw;
+}
 #mainContainer h1{
     font-size: 5em !important;
 }
@@ -57,6 +88,18 @@ html{
     font-size: 1.5em !important;
 }
 
+#mainContainer2 h1{
+    font-size: 5em !important;
+}
+
+#mainContainer2 h2{
+    font-size: 3em !important;
+}
+
+#mainContainer2 h3{
+    font-size: 1.5em !important;
+}
+
 #mainContainer #title{
     text-align: center;
 }
@@ -66,6 +109,21 @@ html{
     grid-column: 1/2;
 
     background: gainsboro;
+}
+
+#contentPanel{
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+    width: 100%;
+    min-height: 500px;
+
+    padding-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
 }
 
 #entreePanel_main{

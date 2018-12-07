@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="JS/Semantic-UI-master/dist/semantic.css">
     <link rel="stylesheet" type="text/css" href="CSS/favorite_page.css">
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <script src="JS/favorite.js"></script>
     <script src="JS/loadRecipe.js"></script>
@@ -18,18 +20,46 @@
 
 
 <body id="mainContainer">
-    <div class="ui huge home_icon go_back_button">
-        <div class="ui button">
-            <a href="./search_page.html">Go back to search</a>
-        </div>
+    <div class="ui huge ">
+        <a href="./search_page.html">
+            <div class="ui button go_back_button">
+                <p> <b>Go back to search</b></p>
+            </div>
+        </a>
     </div>
 
+    <!-- Sidebar -->
     <div class="ui black button small"  id="threeline_icon" onclick="w3_open()">
         <img src="img/threelines.png" alt="menu">
     </div>
 
+    <a href="./help4.html">
+        <img src="img/helpDoc/help.jpg" alt="help" id="helpIcon">
+    </a>
+
+    <div class="w3-sidebar w3-bar-block"  id="navbar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+
+        <div class="w3-bar-item">
+            <div id="profilePreviwe">
+                <img src="img/default_avatar_large.png" alt="user image" id="profileImgPreview">
+                <span id="user_name">user_name</span>
+            </div>
+            <br>
+            <a href="./user_page.html"> <span> profile</span> </a>
+            <a href="./login.html"> <span id="log_out"> log out</span> </a>
+        </div>
+        <hr>
+        <a href="./search_page.html" class="w3-bar-item w3-button">Search recipe</a>
+        <hr>
+        <a href="./fridge_2.html" class="w3-bar-item w3-button">Fridge Inventory</a>
+        <hr>
+        <a href="./favorite_page.html" class="w3-bar-item w3-button">Favorite recipes</a>
+        <hr>
+    </div>
+
     <div id = "heading_main">
-        <h1 id="title">Favorite Recipes</h1>
+        <h1 class="ui header" id="title">Favorite Recipes</h1>
     </div>
 
     <hr>

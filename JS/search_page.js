@@ -61,9 +61,9 @@
 
 
         // loop through recipes
-        var anyEntree = false;
-        var match = true;
-        var keys = null;
+        let anyEntree = false;
+        let match = true;
+        let keys = null;
 
         for (let i = 0; i < recipeInfo.length; i++)
         {
@@ -152,9 +152,9 @@
 
 
         // loop through recipes
-        var anyEntree = false;
-        var match = false;
-        var keys = null;
+        let anyEntree = false;
+        let match = false;
+        let keys = null;
 
         for (let i = 0; i < recipeInfo.length; i++)
         {
@@ -166,6 +166,7 @@
                 // have at least one item
                 if (ingredientList.hasOwnProperty(key))
                 {
+                    console.log(key);
                     match = true;
                     break;
                 }
@@ -214,11 +215,11 @@
                 overlayText.append(document.createElement("br"));
 
                 var needItem = null;
-                for (var key in needList)
+                for (var key1 in needList)
                 {
                     needItem = document.createElement("li");
                     needItem = document.createElement("li");
-                    needItem.innerHTML = key.concat(": ", needList[key], "g");
+                    needItem.innerHTML = key1.concat(": ", needList[key1], "g");
 
                     overlayText.appendChild(needItem);
                 }
